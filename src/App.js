@@ -13,7 +13,8 @@ const App = () => {
         <div className='w-screen h-auto flex flex-col bg-primary'>
           <Header></Header>
 
-          <main className='mt-24 w-full p-8'>
+          {/* md:mt-24  (mt-16 that means for mobile view..ekhane samll hole mt 16 hbe,,,md hole 24 hbe for desktop or tablet) */}
+          <main className='mt-16 md:mt-20 md:px-16 py-4 px-4 w-full p-8'> 
             <Routes>
               <Route path='/*' element={<MainContainer />} />
               <Route path='/createContainer' element={<CreateContainer />} />

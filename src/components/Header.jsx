@@ -113,7 +113,7 @@ const Header = () => {
                 <div className='relative'>
                       <motion.img
                         whileTap={{ scale: 0.8 }}
-                        src={user ? user.photoURL : "./assets/img/avatar.png"}
+                        src={user ? user.photoURL : "./assets/img/avatar.png" ? "./assets/img/avatar.png" :""}
                         alt='avatar'
                         className='w-8 min-w-[10px] h-8 min-h-[10px] object-cover cursor-pointer drop-shadow-2xl rounded-full'
                         onClick={login}
@@ -152,6 +152,15 @@ const Header = () => {
               <img src='./assets/img/logo.png' className='w-8 object-cover' alt="logo"></img>
               <p className='text-headingColor text-xl font-bold'> City</p>
               </Link>
+
+
+              <div className='relative flex items-center justify-center'>
+                  <MdShoppingBasket className='text-textColor text-2xl cursor-pointer' />
+                  <div className='w-4 h-4 bg-cartNumBg rounded-full flex items-center justify-center absolute -top-1 -right-1'>
+                    <p className='text-white font-semibold text-xs'>2</p>
+                  </div>
+                </div>
+              
 
               <div className='relative'>
                       <motion.img

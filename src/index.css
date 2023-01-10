@@ -13,6 +13,9 @@ body{
 
 html , body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    /* overflow-x mane holo width jodi screen theke boro hoi tahole scroll asa off hyr jabe */
 }
 
 @tailwind base;
