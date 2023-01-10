@@ -8,6 +8,7 @@ const App = () => {
     // <div className='w-screen h-screen flex items-center justify-center text-blue-600'>App</div>
     <AnimatePresence>
       <>
+      {/* jobayed jobayed */}
 
         <div className='w-screen h-auto flex flex-col bg-primary'>
           <Header></Header>
