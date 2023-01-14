@@ -18,6 +18,17 @@ html , body{
     /* overflow-x mane holo width jodi screen theke boro hoi tahole scroll asa off hyr jabe */
 }
 
+#home-part #jobayedgrid{
+   column-gap: 8rem;
+    
+}
+/* #home-part #heroDatas{
+    background: #000;
+    display: flex;
+    justify-content: space-between
+    
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

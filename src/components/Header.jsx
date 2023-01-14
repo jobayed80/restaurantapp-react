@@ -57,7 +57,7 @@ const Header = () => {
     }
   };
 
-  // this function used for logout
+  // this function used for logout wehn logout then all data clear from redux
   const signOut = ()=>{
     setIsmenu(false)
     localStorage.clear()
@@ -113,7 +113,7 @@ const Header = () => {
                 <div className='relative'>
                       <motion.img
                         whileTap={{ scale: 0.8 }}
-                        src={user ? user.photoURL : "./assets/img/avatar.png" ? "./assets/img/avatar.png" :""}
+                        src={user ? user.photoURL : "./assets/img/avatar.png" ? "./assets/img/avatar.png" : ""}
                         alt='avatar'
                         className='w-8 min-w-[10px] h-8 min-h-[10px] object-cover cursor-pointer drop-shadow-2xl rounded-full'
                         onClick={login}
